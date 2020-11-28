@@ -1,93 +1,156 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <link rel="icon" href="../icons/gabinete.png" type="image/png" sizes="512x512">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Marina Gemma Pulgar Martín">
     <meta name="robots" content="index,follow">
-    <meta name="description" content="En este blog encontrarás noticias sobre el bricolaje, el diseño de interiores y proyectos de decoración perfectos para aquellos a los que les encanta decorar su casa a un precio asequible.">
-    <meta name="keywords" content="bricolaje, DIY, decoración, decorar, diseño de interiores, muebles, proyectos de decoración">
-    <title>Mi Blog del Bricolaje</title> 
+    <meta name="description"
+        content="En este blog encontrarás noticias sobre el bricolaje, el diseño de interiores y proyectos de decoración perfectos para aquellos a los que les encanta decorar su casa a un precio asequible.">
+    <meta name="keywords"
+        content="bricolaje, DIY, decoración, decorar, diseño de interiores, muebles, proyectos de decoración">
+    <link rel="stylesheet" href="../css/estilogeneral.css">
+    <title>Mi Blog del Bricolaje</title>
 </head>
-<body style="background-image:url(data:image/jpeg;base64,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)">
-    <p style="color:rgb(0, 0, 0)"> Mi Blog del Bricolaje - <i>Marina Gemma Pulgar Martín</i></p>
-    <hr style="color:dimgray"> 
-    <a id="inicio-N2"></a>
-    <h1 style="color:dimgray; text-align: center"><b>NOTICIA </b><small>21/11/2020</small></h1>
 
-    <h1 style="color:rgb(0, 0, 0); text-align: center"><u><i>Guía para principiantes: todo lo que necesitas en tu kit básico de herramientas</i></u></h1> 
-        
-        <p style="text-align: center">Adentrarse en el mundo del bricolaje tiene sus pros y sus contras, uno de los contras es que uno se puede sentir
-        perdido a la hora de comprar herramientas. Éstas en su mayoria suelen ser también algo caras y la ilusión del principiante puede hacerte pensar que necesitas todas y cada una de ellas,
-        lo que causará estragos en tu bolsillo. Pero no te preocupes, porque en este post hemos hecho una selección de las herramientas esenciales que necesitas en tu kit de principiante tanto 
-        si estás empezando a iniciarte en el mundo del DIY, como si solo necesitas lo imprescindible para salir del paso.
-        <br>
-        <br>
+<body
+    style="background-image:url(data:image/jpeg;base64,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)">
+    <p> Mi Blog del Bricolaje - <i>Marina Gemma Pulgar Martín</i></p>
+    <div id="línea_separación">
+        <hr>
+    </div>
+    <div id="Noticia">
+    <h1><b>NOTICIA </b><small>21/11/2020</small></h1>
+    </div>
+    <div id="Noticias">
+        <a id="inicio-N2"></a>     
+        <h1><u><i>Guía para principiantes: todo lo que necesitas en tu kit básico de herramientas</i></u></h1>
+
+        <p>Adentrarse en el mundo del bricolaje tiene sus pros y sus contras, uno de los
+            contras
+            es que uno se puede sentir
+            perdido a la hora de comprar herramientas. Éstas en su mayoria suelen ser también algo caras y la ilusión
+            del
+            principiante puede hacerte pensar que necesitas todas y cada una de ellas,
+            lo que causará estragos en tu bolsillo. Pero no te preocupes, porque en este post hemos hecho una selección
+            de
+            las herramientas esenciales que necesitas en tu kit de principiante tanto
+            si estás empezando a iniciarte en el mundo del DIY, como si solo necesitas lo imprescindible para salir del
+            paso.
+            <br>
+            <br>
             <picture>
                 <source media="(max-width: 799px)" srcset="../images/HerramientasPortada-250w.jpg">
                 <source media="(min-width: 800px)" srcset="../images/HerramientasPortada-500w.jpg">
                 <img src="../images/HerramientasPortada-500w.jpg" alt="Herramientas">
             </picture>
-        </P>
+        </p>
         <br>
-
-    <h2 style="color:rgb(160, 133, 93);text-align: center"><b>HERRAMIENTAS</b></h2> 
-    <p style="margin-left: 3em; margin-right: 3em">
-        <b>-> MARTILLO:</b> el <a href="https://www.bricodepot.es/herramientas/manuales/martillos" target="_blank">martillo</a> es una herramienta de bricolaje imprescindible para fijar y quitar clavos sobre distintos tipos de superficies. Te será fundamental si quieres dar sus primeros pasos en la carpintería.<br>
-        <br>
-        <b>-> CINTA MÉTRICA:</b> en tu hogar no puede faltar una <a href="https://www.bricodepot.es/herramientas/medicion/cintas-metricas-flexometros" target="_blank">cinta métrica</a> o también conocida como metro ya que es imprescindible para tomar medidas. Tanto si tienes que medir el espacio disponible en tu cocina o la distancia
-         entre cuadro y cuadro, la cinta métrica es imprescindible.<br>
-        <br>
-        <b>-> LLAVE INGLESA:</b> la <a href="https://www.amazon.es/Stanley-MaxSteel-0-90-948-Llave-ajustable/dp/B004OTOMAM" target="_blank">llave inglesa</a> es una herramienta que se utiliza para aflojar o ajustar tornillos y tuercas de cualquier tipo y tamaño, ya que se puede ajustar su rango de apertura.<br>
-        <br>
-        <b>-> TORNILLOS, TUERCAS Y ARANDELAS:</b> son elementos metálicos utilizados para fijar y unir piezas. Siempre está bien tener de repuesto en tu kit de bricolaje por cualquier avería que pueda surgir. La <a href="https://www.bricodepot.es/ferreteria/tornilleria/tornillos" target="_blank">tornillería</a> es fundamental para cualquier actividad de bricolaje en tu hogar.<br>
-        <br>
-        <b>-> ALICATES:</b> los <a href="https://www.bricodepot.es/herramientas/manuales/llaves" target="_blank">alicates</a> tienen múltiples usos en función de su tipología. Se usan principalmente para apretar o desenroscar tuercas, sujetar objetos pequeños con fuerza, pelar cables o doblar alambres.<br>
-        <br>
-        <b>-> NIVEL DE BURBUJA:</b> un <a href="https://www.bricodepot.es/herramientas/medicion/niveles" target="_blank">nivel de burbuja</a> te ayudará a comprobar que cualquier objeto esté perfectamente alineado de forma horizontal o vertical. Es el que utilizarás para nivelar por ejemplo los cuadros.<br>
-        <br>
-        <b>-> SERRUCHO Y SIERRA:</b> el <a href="https://www.bricodepot.es/serrucho-para-madera-460-mm-magnusson" target="_blank">serrucho</a> es una herramienta imprescindible en tu kit de bricolaje ya que que sirve para hacer cortes en madera y la sierra para el resto de materiales, como el aluminio, el plástico o el hierro.<br>
-        <br>
-        <b>-> DESTORNILLADOR:</b> existen <a href="https://www.bricodepot.es/herramientas/manuales/destornilladores" target="_blank">destornilladores</a> de distintos tipos, formas y tamaños. Su función es la de apretar y aflojar tornillos. Lo ideal es hacerse con un <a href="https://www.bricodepot.es/juego-de-destornilladores-22-piezas-magnusson" target="_blank">juego con cabezales intercambiables</a> para disponer de todas las opciones posibles.<br>
-        <br>
-        <b>-> LLAVE ALLEN:</b> la <a href="https://www.bricodepot.es/juego-9-llaves-allen-largas-y-bola-mg" target="_blank">llave allen</a> no puede faltar en el kit de bricolaje ya que sirve para atornillar y desatornillar tornillos con cabezal hexagonal. Existen de distintas formas y tamaños, por lo que comprando un juego de ellas te asegurarás de que nunca te falte de nada.<br>
-        <br>
-        <b>-> TALADRO:</b> el <a href="https://www.bricodepot.es/herramientas/electricas/taladros" target="_blank">taladro</a> es una herramienta eléctrica esencial para hacer agujeros en paredes, muebles y distintos tipos de materiales. También sirven para atornillar y desatornillar. Los hay con cable o con batería y con distintos tipos de potencia.<br>
-        <br>
-        <b>-> BROCAS:</b> las <a href="https://www.bricodepot.es/herramientas/accesorios/brocas" target="_blank">brocas</a> son unas piezas metálicas imprescindibles para colocar en el taladro y poder perforar superficies. Las hay de distintos tamaños y para distintos tipos de materiales.<br>
-        <br>
-        <b>-> TACOS:</b> los <a href="https://www.bricodepot.es/ferreteria/fijacion-y-ensamblaje/tacos" target="_blank">tacos</a> son necesarios para fijar o colgar elementos, como una estantería o un cuadro en la pared. Es importante que el taco sea del mismo tamaño que la broca con la que se ha hecho el agujero.<br>
-        <br>
-        <b>-> CINTA AMERICANA, CINTA AISLANTE Y BRIDAS:</b> las <a href="https://www.bricodepot.es/ferreteria/adhesivos/cintas-adhesivas" target="_blank">cintas</a> son elementos versátiles que unen, reparan y aíslan de forma fácil y rápida.<br>
-        <br>
-        <br>
-    </p>
-    <p style="text-align: center">   
-    <video autoplay loop controls width="600" >
-            <source src="../videos/VideoHerramientas.MP4.mp4" type="video/mp4">
-            <source src="../videos/VideoHerramientas.OGV.zip" type="video/ogg">
-            <source src="../videos/VideoHerramientas.WebM.webm" type="video/webm">
-        No se puede mostrar el vídeo en este navegador
-    </video>
-        <br>
-        <br>
-        <audio controls>
-
-            <source src="../sounds/media.io_eb8f4910643d43a78106648851b4318c.ogg" type="audio/ogg">
-            
-            <source src="../sounds/Herramientas_trabajando.mp3" type="audio/mpeg">
-            
-            No se puede reproducir el archivo de audio
-            
-            </audio>
-        <br>
-        <br>
-        Y esta ha sido nuestra selección de herramientas más importantes. ¡Esperamos que te haya gustado!
-        <br>
-        <br>
-        <a href="#inicio-N2">Volver a leer</a>-<a href="../index.html#noticia2">Volver a página de inicio</a>
-    </p>
        
+            <h2 style="color: rgb(160, 133, 93);"><b>HERRAMIENTAS</b></h2>
+    </div>
+        <div id="Noticia2_contenido">
+            <ul>
+                <li> <b>MARTILLO:</b> el <a href="https://www.bricodepot.es/herramientas/manuales/martillos"
+                        target="_blank">martillo</a> es una herramienta de bricolaje imprescindible para fijar y quitar
+                    clavos sobre distintos tipos de superficies. Te será fundamental si quieres dar sus primeros pasos
+                    en la carpintería.</li>
+
+                <li><b>CINTA MÉTRICA:</b> en tu hogar no puede faltar una <a
+                        href="https://www.bricodepot.es/herramientas/medicion/cintas-metricas-flexometros"
+                        target="_blank">cinta métrica</a> o también conocida como metro ya que es imprescindible para
+                    tomar medidas. Tanto si tienes que medir el espacio disponible en tu cocina o la distancia entre
+                    cuadro y cuadro, la cinta métrica es imprescindible.</li>
+                
+                <li><b>LLAVE INGLESA:</b> la <a
+                        href="https://www.amazon.es/Stanley-MaxSteel-0-90-948-Llave-ajustable/dp/B004OTOMAM"
+                        target="_blank">llave inglesa</a> es una herramienta que se utiliza para aflojar o ajustar
+                    tornillos y tuercas de cualquier tipo y tamaño, ya que se puede ajustar su rango de apertura.</li>
+                
+                <li><b>TORNILLOS, TUERCAS Y ARANDELAS:</b> son elementos metálicos utilizados para fijar y unir piezas.
+                    Siempre está bien tener de repuesto en tu kit de bricolaje por cualquier avería que pueda surgir. La
+                    <a href="https://www.bricodepot.es/ferreteria/tornilleria/tornillos" target="_blank">tornillería</a>
+                    es fundamental para cualquier actividad de bricolaje en tu hogar.</li>
+                
+                <li><b>ALICATES:</b> los <a href="https://www.bricodepot.es/herramientas/manuales/llaves"
+                        target="_blank">alicates</a> tienen múltiples usos en función de su tipología. Se usan
+                    principalmente para apretar o desenroscar tuercas, sujetar objetos pequeños con fuerza, pelar cables
+                    o doblar alambres.</li>
+                
+                <li><b>NIVEL DE BURBUJA:</b> un <a href="https://www.bricodepot.es/herramientas/medicion/niveles"
+                        target="_blank">nivel de burbuja</a> te ayudará a comprobar que cualquier objeto esté
+                    perfectamente alineado de forma horizontal o vertical. Es el que utilizarás para nivelar por ejemplo
+                    los cuadros.</li>
+                
+                <li><b>SERRUCHO Y SIERRA:</b> el <a
+                        href="https://www.bricodepot.es/serrucho-para-madera-460-mm-magnusson"
+                        target="_blank">serrucho</a> es una herramienta imprescindible en tu kit de bricolaje ya que que
+                    sirve para hacer cortes en madera y la sierra para el resto de materiales, como el aluminio, el
+                    plástico o el hierro.</li>
+                
+                <li><b>DESTORNILLADOR:</b> existen <a
+                        href="https://www.bricodepot.es/herramientas/manuales/destornilladores"
+                        target="_blank">destornilladores</a> de distintos tipos, formas y tamaños. Su función es la de
+                    apretar y aflojar tornillos. Lo ideal es hacerse con un <a
+                        href="https://www.bricodepot.es/juego-de-destornilladores-22-piezas-magnusson"
+                        target="_blank">juego con cabezales intercambiables</a> para disponer de todas las opciones
+                    posibles.</li>
+               
+                <li><b>LLAVE ALLEN:</b> la <a href="https://www.bricodepot.es/juego-9-llaves-allen-largas-y-bola-mg"
+                        target="_blank">llave allen</a> no puede faltar en el kit de bricolaje ya que sirve para
+                    atornillar y desatornillar tornillos con cabezal hexagonal. Existen de distintas formas y tamaños,
+                    por lo que comprando un juego de ellas te asegurarás de que nunca te falte de nada.</li>
+               
+                <li><b>TALADRO:</b> el <a href="https://www.bricodepot.es/herramientas/electricas/taladros"
+                        target="_blank">taladro</a> es una herramienta eléctrica esencial para hacer agujeros en
+                    paredes, muebles y distintos tipos de materiales. También sirven para atornillar y desatornillar.
+                    Los hay con cable o con batería y con distintos tipos de potencia.</li>
+                
+                <li><b>BROCAS:</b> las <a href="https://www.bricodepot.es/herramientas/accesorios/brocas"
+                        target="_blank">brocas</a> son unas piezas metálicas imprescindibles para colocar en el taladro
+                    y poder perforar superficies. Las hay de distintos tamaños y para distintos tipos de materiales.
+                </li>
+                
+                <li><b>TACOS:</b> los <a href="https://www.bricodepot.es/ferreteria/fijacion-y-ensamblaje/tacos"
+                        target="_blank">tacos</a> son necesarios para fijar o colgar elementos, como una estantería o un
+                    cuadro en la pared. Es importante que el taco sea del mismo tamaño que la broca con la que se ha
+                    hecho el agujero.</li>
+                
+                <li><b>CINTA AMERICANA, CINTA AISLANTE Y BRIDAS:</b> las <a
+                        href="https://www.bricodepot.es/ferreteria/adhesivos/cintas-adhesivas"
+                        target="_blank">cintas</a> son elementos versátiles que unen, reparan y aíslan de forma fácil y
+                    rápida.</li>
+            </ul>
+        </div>
+            <br>
+        <div id="Noticias-2">
+            <video autoplay loop controls width="600">
+                <source src="../videos/VideoHerramientas.MP4.mp4" type="video/mp4">
+                <source src="../videos/media.io_3a302aa023c54aa98d58d1ecef2b7066.ogv" type="video/ogg">
+                <source src="../videos/VideoHerramientas.WebM.webm" type="video/webm">
+                No se puede mostrar el vídeo en este navegador
+            </video>
+            <br>
+            <br>
+            <audio controls>
+
+                <source src="../sounds/media.io_eb8f4910643d43a78106648851b4318c.ogg" type="audio/ogg">
+
+                <source src="../sounds/Herramientas_trabajando.mp3" type="audio/mpeg">
+
+                No se puede reproducir el archivo de audio
+
+            </audio>
+            <br>
+            <br>
+            Y esta ha sido nuestra selección de herramientas más importantes. ¡Esperamos que te haya gustado!
+            <br>
+            <br>
+            <a href="#inicio-N2">Volver a leer</a>-<a href="../index.html#noticia2">Volver a página de inicio</a>
+    
+    </div>
 </body>
+
 </html>
