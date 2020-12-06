@@ -2,48 +2,41 @@
     text-align: center;
     color: dimgray;
 }
+.Encabezado {
+    color: white;
+    text-align: center;
+}
 #línea_separación {
     color: dimgray;
 }
 #portada {
    text-align: center
 }
-#BRICOLAJE-1 {
+#footer {
+    background-color: dimgray;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+.BRICOLAJE {
     background-color:rgba(187, 160, 121, 0.699);
     padding: 20px;
     text-align: center;
     margin: 50px;
 }
-#BRICOLAJE-2 {
-    background-color:rgba(187, 160, 121, 0.699);
-    padding: 20px;
-    text-align: center;
-    margin: 50px;
-}
-#HERRAMIENTAS-1 {
+.HERRAMIENTAS{
     background-color: rgba(202, 196, 188, 0.699);
     padding: 20px;
     text-align: center;
     margin: 50px;
 }
-#HERRAMIENTAS-2 {
-    background-color: rgba(202, 196, 188, 0.699);
-    padding: 20px;
-    text-align: center;
-    margin: 50px;
-}
-#DECORACIÓN-1 {
+.DECORACIÓN {
     background-color: rgba(122, 93, 66, 0.699);
     padding: 20px;
     text-align: center;
     margin: 50px;
 }
-#DECORACIÓN-2 {
-    background-color: rgba(122, 93, 66, 0.699);
-    padding: 20px;
-    text-align: center;
-    margin: 50px;
-}
+
 #Noticias {
     text-align: center;
     margin: 50px;
