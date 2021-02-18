@@ -77,3 +77,9 @@ ol {
     text-align: left;
     display: inline-block;
 }
+form {
+
+        display: inline-block;
+    
+        text-align: center;
+}
