@@ -78,12 +78,16 @@ ol {
     display: inline-block;
 }
 form {
-    position: relative;
+    position: relative;;
     width  : 500px;
     height : 498px;
-    margin : 0 auto;
+    margin-top : 80px;
+    margin-left: 400px;
 }
 #Bienvenido {
     margin-left: 200px;
     margin-top: 200px;
+}
+legend {
+    text-align: center;
 }
