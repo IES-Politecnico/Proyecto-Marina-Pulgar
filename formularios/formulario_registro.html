@@ -20,19 +20,18 @@
      <form action="#" method="get" name="registro" id="campo_registro">
         <fieldset>
             <legend>REGISTRO</legend>
-            <p>Usuario (mín.6 caracteres):<input type="text" name="usuario" minlength="6" requierd></p><br>
+            <p>Usuario (mín.6 caracteres):<input type="text" name="usuario" minlength="6" requierd=""></p><br>
             <p>Contraseña (mín.8 caracteres):<input type="password" name="contrasena1" minlength="8" required></p><br>
-            <p>Repetir contraseña:<input type="password" name="rep_contrasena" required></p><br>
+            <p>Repetir contraseña:<input type="password" name="rep_contrasena" required=""></p><br>
             <p id="con_coincidir"></p><br>
-            <p>Nombre: <input type="text" name="nombre" required maxlength="25"></p><br>
-            <p>Primer apellido: <input type="text" name="apellido_1" required maxlength="25" ></p><br>
-            <p>Segundo apellido: <input type="text" name="apellido_2" required maxlength="25"></p><br>
+            <p>Nombre: <input type="text" name="nombre"  maxlength="25"></p><br>
+            <p>Primer apellido: <input type="text" name="apellido_1"  maxlength="25" ></p><br>
+            <p>Segundo apellido: <input type="text" name="apellido_2"  maxlength="25"></p><br>
             <p>Fecha de nacimiento: <input type="date" name="cumple"></p><br>
             <p>Correo electrónico: <input type="email" name="d_correo" size="50"></p><br>
             <input type="button" value="Enviar" name="env_contenido" onclick="comprobacion()">
             <input type="reset" value="Borrar">
         </fieldset>
-        
      </form>   
 </main>
 </body>
